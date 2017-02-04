@@ -28,12 +28,14 @@ function Circulo ()
 
 var radioDelTerreno;
 var perimetroC;
-
+var alambre;
 radioDelTerreno= document.getElementById('Radio').value;
 radioDelTerreno=parseInt(radioDelTerreno);
 //alert(perimetroC);
-alert(((((parseInt(radioDelTerreno))*2))*Math.PI)*3);
-
+perimetroC=(radioDelTerreno*Math.PI)*2;
+//alert(((((parseInt(radioDelTerreno))*2))*Math.PI)*3);
+alambre=perimetroC*3;
+alert(alambre);
 
 }
 function Materiales () 
@@ -42,13 +44,18 @@ function Materiales ()
 var largoDelTerreno;
 var AnchoDelTerreno;
 var area;
+var cal;
+var cemento;
+
 
 largoDelTerreno= document.getElementById('Largo').value;
 AnchoDelTerreno= document.getElementById('Ancho').value;
 
 area= parseInt(largoDelTerreno)*parseInt(AnchoDelTerreno);
-
-alert((area)*2+" bolsas de cemento "+(area)*3+" bolsas de cal ");
+cal=area*3
+cemento=area*2
+alert(cemento+" bolsas de cemento "+cal+" bolsas de cal ");
+//alert((area)*2+" bolsas de cemento "+(area)*3+" bolsas de cal ");
 
 
 

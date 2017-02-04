@@ -9,11 +9,17 @@ function Sumar ()
 var precioUno;
 var precioDos;
 var precioTres;
+var total;
 
 precioUno= document.getElementById('PrecioUno').value;
 precioDos= document.getElementById('PrecioDos').value;
 precioTres= document.getElementById('PrecioTres').value;
-alert(parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres));
+//alert(parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres));
+precioUno=parseInt(precioUno);
+precioDos=parseInt(precioDos);
+precioTres=parseInt(precioTres);
+total=(precioUno)+(precioDos)+(precioTres);
+alert(" La Suma de Todos los precios es "+total);
 
 
 
@@ -28,8 +34,12 @@ var precioTres;
 precioUno= document.getElementById('PrecioUno').value;
 precioDos= document.getElementById('PrecioDos').value;
 precioTres= document.getElementById('PrecioTres').value;
-alert((parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres))/3);
-
+//alert((parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres))/3);
+precioUno=parseInt(precioUno);
+precioDos=parseInt(precioDos);
+precioTres=parseInt(precioTres);
+total=("el precio promedio es "+((precioUno)+(precioDos)+(precioTres))/3);
+alert(total);
 
 }
 function PrecioFinal () 
@@ -43,8 +53,12 @@ var precioTres;
 precioUno= document.getElementById('PrecioUno').value;
 precioDos= document.getElementById('PrecioDos').value;
 precioTres= document.getElementById('PrecioTres').value;
-alert((parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres))*1.21+" precio final + iva");
-
+//alert((parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres))*1.21+" precio final + iva");
+precioUno=parseInt(precioUno);
+precioDos=parseInt(precioDos);
+precioTres=parseInt(precioTres);
+total=(" El precio Final + iva es "+((precioUno)+(precioDos)+(precioTres))*1.21);
+alert(total);
 
 
 }
