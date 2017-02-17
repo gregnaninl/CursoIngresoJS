@@ -23,8 +23,73 @@ function CalcularPrecio ()
 
     marca=document.getElementById('Marca').value;
 
-
     if(cantidadDeLamparas>5)
+    
+    precioFinal=precioBruto*0.5;
+
+    if(cantidadDeLamparas==5)
+        {
+    switch(marca)
+        {
+        case "ArgentinaLuz":
+        precioFinal=precioBruto*0.6;
+        break;
+        case "FelipeLamparas":
+        case "JeLuz":
+        case "HazIluminacion":
+        case "Osram":
+        precioFinal=precioBruto*0.70;
+        break;
+        }
+
+    }   
+    else
+    {
+
+    if (cantidadDeLamparas==4);
+        {
+        switch(marca)
+        {
+        case "ArgentinaLuz":
+        case "FelipeLamparas":
+        precioFinal=precioBruto*0.75;
+        break;
+        case "JeLuz":
+        case "HazIluminacion":
+        case "Osram":
+        precioFinal=precioBruto*0.80;
+        break;
+        }
+        }
+        else
+         {
+            if (cantidadDeLamparas==3);
+        {
+        switch(marca)
+        {
+        case "ArgentinaLuz":
+        case "FelipeLamparas":
+        precioFinal=precioBruto*0.85;
+        break;
+        case "JeLuz":
+        case "HazIluminacion":
+        case "Osram":
+        precioFinal=precioBruto*0.80;
+        break;
+        }
+        }
+
+
+         }     
+
+    }
+
+
+
+
+        alert(precioFinal);
+
+    /*if(cantidadDeLamparas>5)
     {
         
         precioFinal=precioBruto*0.5;
@@ -94,7 +159,7 @@ function CalcularPrecio ()
         document.getElementById('precioDescuento').value= "El precio Final es $"+precioFinal;
        // alert("El Precio Final es $"+precioFinal);
     }
-    
+    */
 
  	
 }
