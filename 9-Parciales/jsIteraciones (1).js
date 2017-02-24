@@ -1,18 +1,30 @@
 function Mostrar()
 {
 	
-	var importe;
-	var diaHabil;
+	var nota;
+	var sexo;
+	var cont=0;
 
 
-
-	importe=prompt("ingrese importe de venta");
-	while(importe<1)
+	while(cont<10)
 	{
-		importe=prompt("ingrese importe de venta");
 
+	nota=prompt("ingrese nota");
+	nota=parseInt(nota);
+	while(nota<0 || nota>10)
+	{
+	nota=prompt("ingrese nota entre 0 y 10");
+	nota=parseInt(nota);
 	}
 
+
+
+
+
+	} 
+
+
+	
 
 
 
