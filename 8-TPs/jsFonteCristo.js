@@ -150,7 +150,40 @@ function VerificarPrimo()
 function NumerosPrimos()
 
 {
-		var numero;
+
+
+	var numero;
+	var noEsPrimo;
+	var anteriores;
+
+	numero=document.getElementById('numero').value;
+ 	numero=parseInt(numero);
+
+ 	for(recorrido=2;recorrido<=numero;recorrido++)
+	{
+	noEsPrimo="no";
+	for(anteriores=2;anteriores<recorrido;anteriores++)
+	{
+	
+	if(recorrido%anteriores==0)
+	{
+
+	noEsPrimo="si"
+	break;
+	}
+	}
+	if(noEsPrimo=="si")
+	{
+
+	}	
+	else
+	{
+		console.log("el "+recorrido+" es primo");
+	}
+	}
+
+
+		/*var numero;
 		var divisor;
 		var divisible;
 		var primo=0;
@@ -179,7 +212,7 @@ function NumerosPrimos()
 		{
 
 			
-		}
+		}*/
 
 		
 		
